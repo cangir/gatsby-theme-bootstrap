@@ -2,8 +2,7 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "commonjs",
-    // jsx: if you do something after transcompiling (Babel etc.), you should set "preserve"
-    "jsx": "preserve",
+    "jsx": "preserve", // jsx: set "preserve" if you do something after transcompiling (Babel etc.)
     "lib": ["dom", "es2015", "es2017"],
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
