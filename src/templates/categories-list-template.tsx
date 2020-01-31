@@ -1,4 +1,3 @@
-// @flow strict
 import React from "react";
 
 const CategoriesListTemplate: React.FCX<{}> = () => {
