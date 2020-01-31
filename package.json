@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-bootstrap",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Gatsby Theme Bootstrap",
   "main": "index.tsx",
   "scripts": {
