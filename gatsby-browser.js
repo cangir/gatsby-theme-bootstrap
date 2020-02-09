@@ -1,3 +1,3 @@
-"use strict";
+// "use strict";
 
-require("bootstrap/dist/css/bootstrap.min.css");
+require("./src/assets/scss/init.scss");
