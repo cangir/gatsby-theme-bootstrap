@@ -1,9 +1,23 @@
 .promo {
   position: relative;
   color: $white;
+  background: {
+    repeat: no-repeat;
+    position: 50% 0;
+    size: cover;
+  }
 
   &-container {
+    min-height: 25vh;
     position: relative;
     z-index: 2;
+  }
+
+  @include media-breakpoint-down(lg) {
+    & {
+      background: {
+        attachment: fixed;
+      }
+    }
   }
 }
