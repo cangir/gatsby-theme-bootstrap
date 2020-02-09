@@ -1,7 +1,8 @@
 import React from "react";
+import Layout from "../components/layout/layout";
 
 const PostTemplate: React.FCX<{}> = () => {
-  return <div>Post Template</div>;
+	return <Layout>Post Template</Layout>;
 };
 
 export default PostTemplate;

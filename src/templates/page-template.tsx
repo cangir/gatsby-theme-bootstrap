@@ -1,7 +1,8 @@
 import React from "react";
+import Layout from "../components/layout/layout";
 
 const PageTemplate: React.FCX<{}> = () => {
-  return <div>Page Template</div>;
+	return <Layout>Page Template</Layout>;
 };
 
 export default PageTemplate;
