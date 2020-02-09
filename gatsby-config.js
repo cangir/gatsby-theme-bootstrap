@@ -11,18 +11,19 @@ module.exports = {
     "gatsby-plugin-catch-links",
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
+    "gatsby-plugin-sass",
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "post",
-        path: `${__dirname}/src/content/posts`,
+        path: `${__dirname}/content/posts`,
       },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "",
-        path: `${__dirname}/src/content/pages`,
+        path: `${__dirname}/content/pages`,
       },
     },
     {
@@ -53,6 +54,17 @@ module.exports = {
       resolve: "gatsby-plugin-webpack-bundle-analyzer",
       options: {
         openAnalyzer: false,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Poppins`,
+            variants: [`300`, `400`, `500`, `600`]
+          },
+        ],
       },
     },
     "gatsby-plugin-netlify",
@@ -123,8 +135,8 @@ module.exports = {
         ],
       },
     },
-    // gatsby-plugin-manifest should be described before gatsby-plugin-offline
     {
+      // gatsby-plugin-manifest should be described before gatsby-plugin-offline
       resolve: "gatsby-plugin-manifest",
       options: {
         name: config.siteTitle,
