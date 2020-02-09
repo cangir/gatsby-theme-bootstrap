@@ -1,28 +1,28 @@
 {
-  "compilerOptions": {
-    "target": "esnext",
-    "module": "commonjs",
-    "jsx": "preserve", // jsx: set "preserve" if you do something after transcompiling (Babel etc.)
-    "lib": ["dom", "es2015", "es2017"],
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "noEmit": true,
-    "allowJs": true,
-    "sourceMap": true,
-    "skipLibCheck": true,
-    "noImplicitAny": true,
-    "noUnusedLocals": true,
-    "esModuleInterop": true,
-    "isolatedModules": false,
-    "strictNullChecks": true,
-    "noImplicitReturns": true,
-    "baseUrl": "./src",
-    "paths": {
-      "*": ["src/types/*"],
-      "src/*": ["src/*"]
-    },
-    "typeRoots": ["src/types", "node_modules/@types"]
-  },
-  "exclude": ["node_modules", "public", ".cache"]
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "commonjs",
+		"jsx": "preserve", // jsx: set "preserve" if you do something after transcompiling (Babel etc.)
+		"lib": ["dom", "es2015", "es2017"],
+		"moduleResolution": "node",
+		"allowSyntheticDefaultImports": true,
+		"strict": true,
+		"noEmit": true,
+		"allowJs": true,
+		"sourceMap": true,
+		"skipLibCheck": true,
+		"noImplicitAny": true,
+		"noUnusedLocals": true,
+		"esModuleInterop": true,
+		"isolatedModules": false,
+		"strictNullChecks": true,
+		"noImplicitReturns": true,
+		"baseUrl": "./",
+		"paths": {
+			"*": ["src/types/*"],
+			"src/*": ["src/*"]
+		},
+		"typeRoots": ["src/types", "node_modules/@types"]
+	},
+	"exclude": ["node_modules", "public", ".cache"]
 }
