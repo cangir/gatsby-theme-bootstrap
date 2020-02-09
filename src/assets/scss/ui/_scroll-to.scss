@@ -11,17 +11,9 @@
   border-radius: 50%;
   opacity: 1;
   transition: 0.3s ease-out;
+  cursor: pointer;
 
   &.show {
     bottom: 25px;
-  }
-
-  &__inner {
-  }
-
-  &:hover,
-  &:focus:hover {
-    // color: $scroll-to-hover-color;
-    // opacity: $scroll-to-hover-opacity;
   }
 }
