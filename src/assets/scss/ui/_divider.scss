@@ -1,0 +1,16 @@
+.divider {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+  transform: translateZ(0);
+  overflow: hidden;
+  margin-bottom: -1px;
+  min-height: 19px;
+
+  &-inverse {
+    transform: rotateX(180deg);
+    margin-top: -1px;
+  }
+}
