@@ -1,0 +1,14 @@
+// stylelint-disable declaration-no-important
+
+$dark-text: $light;
+
+@include dark-mode() {
+  & {
+    a {
+      color: $light-link;
+      &:hover {
+        color: $light;
+      }
+    }
+  }
+}

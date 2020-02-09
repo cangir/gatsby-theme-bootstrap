@@ -1,0 +1,22 @@
+.gradient-primary {
+  background: {
+    color: transparent;
+    image: linear-gradient(to top, $dark, $primary);
+  }
+}
+
+.gradient-dark {
+  background: {
+    color: $dark;
+    image: linear-gradient(to left, $dark, $black);
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .gradient-primary-md {
+    background: {
+      color: transparent;
+      image: linear-gradient(to right, $secondary, $primary);
+    }
+  }
+}

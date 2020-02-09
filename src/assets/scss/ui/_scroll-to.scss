@@ -1,0 +1,27 @@
+.scroll-to {
+  position: fixed;
+  right: 25px;
+  bottom: -50px;
+  z-index: 100;
+  width: 2.75rem;
+  height: 2.75rem;
+  // background-color: #107ef4;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 50%;
+  opacity: 1;
+  transition: 0.3s ease-out;
+
+  &.show {
+    bottom: 25px;
+  }
+
+  &__inner {
+  }
+
+  &:hover,
+  &:focus:hover {
+    // color: $scroll-to-hover-color;
+    // opacity: $scroll-to-hover-opacity;
+  }
+}
