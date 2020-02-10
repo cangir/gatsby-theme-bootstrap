@@ -1,11 +1,18 @@
 import React from "react";
 import {Hero, Navbar} from "..";
 
-export const Header: React.FC = () => {
+interface Props {
+	title?: string;
+	breadcrumb?: boolean;
+}
+
+export const Header = ({title, breadcrumb}: Props) => {
 	return (
-		<header>
+		<header
+			className="promo"
+			style={{ background: "center url(./img/bg.jpg)" }}>
 			<Navbar />
-			<Hero />
+			<Hero title={title} breadcrumb={breadcrumb} />
 		</header>
 	);
 };

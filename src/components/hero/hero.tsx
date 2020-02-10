@@ -3,19 +3,21 @@ import { Container } from "react-bootstrap";
 // import { Parallax } from "react-parallax";
 import { Breadcrumb, Divider } from "..";
 
-export const Hero: React.FC = () => {
+interface Props {
+	title?: string;
+	breadcrumb?: boolean;
+}
+
+export const Hero = ({title, breadcrumb}: Props) => {
 	return (
-		<section
-			className="promo"
-			style={{ background: "center url(./img/bg.jpg)" }}
-		>
-			<Container className="d-flex promo-container justify-content-start position-relative">
+			<section className="position-relative">
+				<Container className="d-flex promo-container justify-content-start">
 				<div className="align-self-end p-5">
-					<h1>Can I upgrade my plan at any time?</h1>
-					<Breadcrumb />
+					<h1>{title}</h1>
+					{breadcrumb && <Breadcrumb />}
 				</div>
-			</Container>
-			<Divider />
-		</section>
+				</Container>
+				<Divider />
+			</section>
 	);
 };

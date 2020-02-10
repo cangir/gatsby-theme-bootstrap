@@ -1,11 +1,11 @@
 import React from "react";
 import { Container, Row, Col, Nav } from "react-bootstrap";
-import { Divider } from "..";
+// import { Divider } from "..";
 
 export const Footer: React.FC = () => {
 	return (
-		<footer className="footer pt-6 pb-4 bg-github theme-dark position-relative">
-			<Divider position="top" variant="inverse" />
+		<footer className="footer pt-6 pb-4 position-relative">
+			{/* <Divider position="top" variant="inverse" /> */}
 			<Container>
 				<Row className="text-center align-items-center">
 					<Col>
