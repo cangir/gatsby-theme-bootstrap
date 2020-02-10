@@ -19,13 +19,13 @@
 @import "../../../node_modules/tabler/scss/ui/empty";
 @import "../../../node_modules/tabler/scss/ui/grid";
 @import "../../../node_modules/tabler/scss/ui/icons";
-// @import "../../../node_modules/tabler/scss/ui/forms";
-// @import "../../../node_modules/tabler/scss/ui/forms/form-icon";
-// @import "../../../node_modules/tabler/scss/ui/forms/form-colorinput";
+@import "../../../node_modules/tabler/scss/ui/forms";
+@import "../../../node_modules/tabler/scss/ui/forms/form-icon";
+@import "../../../node_modules/tabler/scss/ui/forms/form-colorinput";
 // @import "../../../node_modules/tabler/scss/ui/forms/form-imagecheck";
 // @import "../../../node_modules/tabler/scss/ui/forms/form-selectgroup";
-// @import "../../../node_modules/tabler/scss/ui/forms/form-custom";
-// @import "../../../node_modules/tabler/scss/ui/forms/validation";
+@import "../../../node_modules/tabler/scss/ui/forms/form-custom";
+@import "../../../node_modules/tabler/scss/ui/forms/validation";
 @import "../../../node_modules/tabler/scss/ui/legend";
 @import "../../../node_modules/tabler/scss/ui/lists";
 @import "../../../node_modules/tabler/scss/ui/loaders";
@@ -66,5 +66,22 @@
 @import "../../../node_modules/tabler/scss/utils/shadow";
 
 @import "../../../node_modules/tabler/scss/dark";
-// @import "../../../node_modules/tabler/scss/debug";
+@import "../../../node_modules/tabler/scss/debug";
 @import "dark";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+ul {
+  display: block;
+  width: 100%;
+}
