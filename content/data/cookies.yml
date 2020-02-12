@@ -1,0 +1,15 @@
+- id: main
+  title: "Unbedingt erforderliche Cookies"
+  description: "Die unbedingt erforderlichen Cookies werden ausschließlich vom Betreiber der Website verwendet. Diese Cookies gewährleisten Funktionen, ohne die diese Website nicht wie vorgesehen genutzt werden kann. Daher können unbedingt erforderliche Cookies nicht einzeln deaktiviert
+  beziehungsweise aktiviert werden."
+- id: functional
+  title: "Funktionale Cookies"
+  description: "Die funktionalen Cookies ermöglichen es dieser Webseite, vom Nutzer bereits getätigte Angaben zu speichern und darauf basierend verbesserte und personalisierte Funktionen anzubieten. Diese Cookies sammeln und speichern ausschließlich anonymisierte Informationen. Diese Cookies
+  verfolgen keine Bewegungen des Nutzers auf anderen Webseiten."
+- id: performance
+  title: "Performance Cookies"
+  description: "Die Performance-Cookies sammeln Informationen darüber, wie diese Webseite genutzt wird. Der Betreiber der Website nutzt diese Cookies um die Attraktivität, den Inhalt und die Funktionalität der Webseiten zu verbessern. Die Deaktivierung von Funktionalen- und Performance-Cookies
+  kann zu Funktionseinschränkungen dieser Website führen."
+- id: marketing
+  title: "Marketing- / Third Party-Cookies"
+  description: "Marketing- / Third Party-Cookies stammen unter anderem von externen Werbeunternehmen und werden verwendet, um Informationen über die vom Nutzer besuchten Websites zu sammeln, um z. B. zielgruppenorientierte Werbung für den Benutzer zu erstellen. Weitere Informationen zu den Cookies, die auf dieser Webseite eingesetzt werden, sind in der Cookie Policy zu finden."
