@@ -64,17 +64,6 @@ module.exports = {
 				openAnalyzer: false,
 			},
 		},
-		{
-			resolve: `gatsby-plugin-prefetch-google-fonts`,
-			options: {
-				fonts: [
-					{
-						family: `Poppins`,
-						variants: [`300`, `400`, `500`, `600`],
-					},
-				],
-			},
-		},
 		"gatsby-plugin-netlify",
 		"gatsby-plugin-netlify-cache",
 		"gatsby-plugin-react-helmet",
