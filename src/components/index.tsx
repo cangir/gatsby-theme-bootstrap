@@ -1,4 +1,6 @@
 export * from "./breadcrumb/breadcrumb";
+export * from "./call-to-action/call-to-action";
+export * from "./clients/clients";
 export * from "./footer/footer";
 export * from "./header/header";
 export * from "./scroll-to-top/scroll-to-top";

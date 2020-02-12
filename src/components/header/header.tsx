@@ -1,18 +1,19 @@
 import React from "react";
-import {Hero, Navbar} from "..";
+import { Hero } from "..";
 
 interface Props {
 	title?: string;
 	breadcrumb?: boolean;
 }
 
-export const Header = ({title, breadcrumb}: Props) => {
+export const Header = ({ title, breadcrumb }: Props) => {
 	return (
-		<header
-			className="promo"
+		<header 
+			className="header overlay overlay-dark"
 			style={{ background: "center url(./img/bg.jpg)" }}>
-			<Navbar />
-			<Hero title={title} breadcrumb={breadcrumb} />
+			<div className="d-flex justify-content-center header-container overlay-inner">
+				<Hero title={title} breadcrumb={breadcrumb} />
+			</div>
 		</header>
 	);
 };
