@@ -107,7 +107,7 @@
 		"stylelint": "13.0.0",
 		"stylelint-config-prettier": "^8.0.1",
 		"stylelint-config-sass-guidelines": "^7.0.0",
-		"stylelint-config-twbs-bootstrap": "2.0.0",
+		"stylelint-config-twbs-bootstrap": "2.0.1",
 		"tabler": "tabler/tabler#dev",
 		"ts-node": "^8.6.2"
 	},
