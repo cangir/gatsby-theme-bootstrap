@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Helmet from "react-helmet";
 import { Col, Row, Button, ButtonToolbar, Modal } from "react-bootstrap";
 import { CallToAction, Clients, Header, Footer, ScrollToTop, Navbar } from "../";
@@ -12,13 +12,10 @@ interface Props {
 }
 
 const Layout = ({ children, title, breadcrumb }: Props) => {
-
 	// const [marketing, setMarketing] = useCookie('cookie_marketing', false);
 	// console.log(marketing);
-  // const [lgShow, setLgShow] = useState(false);
+	// const [lgShow, setLgShow] = useState(false);
 
-	
-	
 	return (
 		<div className="page">
 			<Helmet

@@ -1,5 +1,5 @@
-import {useState} from 'react';
-import Cookies from 'universal-cookie';
+import { useState } from "react";
+import Cookies from "universal-cookie";
 
 /**
  * useCookie - React Hook for Cookies based on universal-cookie
@@ -8,32 +8,32 @@ import Cookies from 'universal-cookie';
  * @returns {Array} Returns cookie value, and the function to update it.
  */
 export const useCookie = (
-  key: string,
-  defaultValue?: any
+	key: string,
+	defaultValue?: any,
 ): [any, (value: any, options?: object) => void, () => void] => {
-  const cookies = new Cookies();
-  const [item, setItemValue] = useState(() => {
-    if (cookies.get(key)) {
-      return cookies.get(key);
-    }
-    return null;
-  });
+	const cookies = new Cookies();
+	const [item, setItemValue] = useState(() => {
+		if (cookies.get(key)) {
+			return cookies.get(key);
+		}
+		return null;
+	});
 
-  /**
-   * Set value of cookie
-   * @param {Object|string} value 
-   * @param {Cookies.CookieAttributes} [options]
-   */
-  const setValue = (value: any, options?: object): void => {
-    setItemValue(value);
-    cookies.set(key, value, options);
-  };
+	/**
+	 * Set value of cookie
+	 * @param {Object|string} value
+	 * @param {Cookies.CookieAttributes} [options]
+	 */
+	const setValue = (value: any, options?: object): void => {
+		setItemValue(value);
+		cookies.set(key, value, options);
+	};
 
-  const removeItem = (): void => {
-    cookies.remove(key);
-  };
+	const removeItem = (): void => {
+		cookies.remove(key);
+	};
 
-  return [item, setValue, removeItem];
+	return [item, setValue, removeItem];
 };
 
 export default useCookie;

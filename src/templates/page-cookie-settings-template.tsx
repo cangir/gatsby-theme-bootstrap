@@ -3,9 +3,9 @@ import { graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import Layout from "../components/layout/layout";
 import { Post } from "../models";
-import { useCookieSettings } from "../hooks"
-import {Card, Row, Col, Form} from "react-bootstrap"
- 
+import { useCookieSettings } from "../hooks";
+import { Card, Row, Col, Form } from "react-bootstrap";
+
 type Props = {
 	data: {
 		mdx: Post;
@@ -22,16 +22,15 @@ const PageCookieSettingsTemplate = ({ data }: Props) => {
 			{cookies.map(({ node }, i) => {
 				const { id, title, description } = node;
 				return (
-					<article key={i} className="pb-4">	
+					<article key={i} className="pb-4">
 						<label className="form-check form-switch">
-							<input className="form-check-input" type="checkbox" disabled={id === "main"}/>
+							<input className="form-check-input" type="checkbox" disabled={id === "main"} />
 							<span className="form-check-label h3">{title}</span>
 						</label>
 						<p>{description}</p>
 					</article>
 				);
 			})}
-			
 		</Layout>
 	);
 };

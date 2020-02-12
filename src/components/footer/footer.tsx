@@ -75,10 +75,14 @@ export const Footer: React.FC = () => {
 								<Nav.Link href="/home">Impressum</Nav.Link>
 							</Nav.Item>
 							<Nav.Item as="li">
-								<Nav.Link eventKey="link-1" href="/datenschutz">Datenschutz</Nav.Link>
+								<Nav.Link eventKey="link-1" href="/datenschutz">
+									Datenschutz
+								</Nav.Link>
 							</Nav.Item>
 							<Nav.Item as="li">
-								<Nav.Link eventKey="link-2" href="/cookie-richtlinie">Cookie-Richtlinie</Nav.Link>
+								<Nav.Link eventKey="link-2" href="/cookie-richtlinie">
+									Cookie-Richtlinie
+								</Nav.Link>
 							</Nav.Item>
 							<Nav.Item as="li">
 								<Nav.Link eventKey="link-2" href="/cookie-einstellungen">
