@@ -42,7 +42,7 @@
         "@types/react": "^16.9.19",
         "@types/react-dom": "^16.9.5",
         "@types/react-helmet": "^5.0.15",
-        "bootstrap": "^4.4.1",
+        "bootstrap": "twbs/bootstrap#a880a58",
         "clsx": "^1.0.4",
         "core-js": "^3.6.4",
         "gatsby": "^2.19.10",
@@ -68,6 +68,7 @@
         "gatsby-remark-relative-images": "^0.2.3",
         "gatsby-source-filesystem": "^2.1.47",
         "gatsby-transformer-sharp": "^2.3.13",
+        "gatsby-transformer-yaml": "^2.2.25",
         "graphql": "^14.6.0",
         "lodash": "^4.17.15",
         "node-sass": "^4.13.1",
@@ -78,6 +79,7 @@
         "react-icons": "^3.9.0",
         "react-parallax": "^3.0.3",
         "typescript": "^3.7.5",
+        "universal-cookie": "^4.0.3",
         "unstated-next": "^1.1.0",
         "webpack": "^4.41.5"
     },
@@ -117,17 +119,12 @@
     },
     "lint-staged": {
         "src/**/*.{js,jsx}": [
-            "eslint . --fix",
-            "git add"
+            "eslint . --fix", "git add"
         ],
         "src/assets/scss/**/*.scss": [
-            "prettier --write",
-            "stylelint --syntax scss --fix",
-            "git add"
+            "prettier --write", "stylelint --syntax scss --fix", "git add"
         ],
-        "*.{json,md}": [
-            "prettier --write"
-        ]
+        "*.{json,md}": ["prettier --write"]
     },
     "husky": {
         "hooks": {
