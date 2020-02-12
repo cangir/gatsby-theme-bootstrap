@@ -3,17 +3,28 @@
   right: 25px;
   bottom: -50px;
   z-index: 100;
-  width: 2.75rem;
-  height: 2.75rem;
-  // background-color: #107ef4;
-  color: #fff;
-  font-size: 1rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  background-color: $primary;
   border-radius: 50%;
-  opacity: 1;
   transition: 0.3s ease-out;
+  opacity: 0.5;
   cursor: pointer;
+  filter: gray;
+  -webkit-filter: grayscale(50%);
+
+  &-item {
+    color: $light;
+    font-size: 1.75rem;
+  }
+
+  &:hover {
+    filter: gray;
+    -webkit-filter: grayscale(0%);
+    opacity: 1;
+  }
 
   &.show {
-    bottom: 25px;
+    bottom: 1rem;
   }
 }

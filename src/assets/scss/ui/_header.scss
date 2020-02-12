@@ -1,4 +1,4 @@
-.promo {
+.header {
   position: relative;
   color: $white;
   background: {
@@ -8,9 +8,14 @@
   }
 
   &-container {
-    min-height: 35vh;
+    min-height: 55vh;
     position: relative;
     z-index: 2;
+  }
+
+  .page-title {
+    font-size: $font-size-base * 2.25;
+    font-weight: 600;
   }
 
   @include media-breakpoint-down(lg) {

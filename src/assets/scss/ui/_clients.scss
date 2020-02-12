@@ -1,0 +1,25 @@
+.clients {
+  &-item {
+    border: {
+      width: 1px;
+      color: $white;
+      style: solid;
+    }
+  }
+
+  &-image {
+    @include px-to-rem(width, 120px);
+    @include px-to-rem(margin-left, auto);
+    @include px-to-rem(margin-right, auto);
+    filter: gray;
+    -webkit-filter: grayscale(100%);
+    opacity: 0.3;
+    transition: all 0.3s ease;
+
+    &:hover {
+      filter: gray;
+      -webkit-filter: grayscale(0%);
+      opacity: 1;
+    }
+  }
+}

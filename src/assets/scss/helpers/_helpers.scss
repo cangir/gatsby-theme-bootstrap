@@ -22,14 +22,14 @@
     content: "";
   }
 
-  &--dark::after {
-    background-color: rgba($dark, 0.5);
+  &-dark::after {
+    background-color: rgba($dark, 0.3);
   }
-  &--light::after {
-    background-color: rgba($white, 0.5);
+  &-light::after {
+    background-color: rgba($light, 0.3);
   }
 
-  &__inner {
+  &-inner {
     position: relative;
     z-index: 1;
   }

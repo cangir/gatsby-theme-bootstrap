@@ -1,0 +1,13 @@
+.navbar {
+  .navbar-brand {
+    font-weight: 600;
+  }
+
+  .navbar-nav {
+    .nav {
+      &-link {
+        opacity: 0.9;
+      }
+    }
+  }
+}
