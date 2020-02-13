@@ -4,7 +4,6 @@ import { MDXRenderer } from "gatsby-plugin-mdx";
 import Layout from "../components/layout/layout";
 import { Post } from "../models";
 import { useCookieSettings } from "../hooks";
-import { Card, Row, Col, Form } from "react-bootstrap";
 
 type Props = {
 	data: {
@@ -15,7 +14,6 @@ type Props = {
 const PageCookieSettingsTemplate = ({ data }: Props) => {
 	const post = data.mdx;
 	const cookies = useCookieSettings();
-	console.log(cookies);
 	return (
 		<Layout title={post.frontmatter.title}>
 			<MDXRenderer>{post.body}</MDXRenderer>

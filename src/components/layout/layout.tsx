@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import Helmet from "react-helmet";
-import { Col, Row, Button, ButtonToolbar, Modal } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import { CallToAction, Clients, Header, Footer, ScrollToTop, Navbar } from "../";
 // import { useCookie } from "../../hooks";
 // import { MDXRenderer } from "gatsby-plugin-mdx";
@@ -22,7 +22,14 @@ const Layout = ({ children, title, breadcrumb }: Props) => {
 				bodyAttributes={{
 					class: "theme-light",
 				}}
-			/>
+				htmlAttributes={{
+					lang: "de",
+				}}
+			>
+				<meta charSet="utf-8" />
+				<title>My Title</title>
+				<meta name="description" content="Nested component" />
+			</Helmet>
 			<Navbar />
 			<Header title={title} breadcrumb={breadcrumb} />
 			<div className="content">
