@@ -140,7 +140,7 @@ module.exports = {
 				short_name: "hpp",
 				description: config.siteDescription,
 				Scope: "/",
-				start_url: "/?utm_source=homescreen",
+				start_url: "/",
 				background_color: "#ffffff",
 				theme_color: "#090909",
 				display: "standalone",
