@@ -1,10 +1,11 @@
 import React from "react";
+import {Link} from 'gatsby';
 import { Container, Row, Col, Nav } from "react-bootstrap";
 // import { Divider } from "..";
 
 export const Footer: React.FC = () => {
 	return (
-		<footer className="footer pt-6 pb-4 position-relative bg-github theme-dark">
+		<footer className="footer mt-0 pt-6 pb-4 position-relative bg-github theme-dark">
 			{/* <Divider position="top" variant="inverse" /> */}
 
 			<Container>
@@ -48,20 +49,20 @@ export const Footer: React.FC = () => {
 
 					<Col sm={12} md={6} lg={2} className="mb-4">
 						<h3>
-							<strong>Legal</strong>
+							<strong>Ce-Fi</strong>
 						</h3>
 						<Nav defaultActiveKey="/home" as="ul" className="flex-column">
 							<Nav.Item as="li">
-								<Nav.Link href="/home">Impressum</Nav.Link>
+								<Link className="nav-link" to="/">Home</Link>
 							</Nav.Item>
 							<Nav.Item as="li">
-								<Nav.Link eventKey="link-1">Datenschutz</Nav.Link>
+								<Link className="nav-link" to="/">Beratung</Link>
 							</Nav.Item>
 							<Nav.Item as="li">
-								<Nav.Link eventKey="link-2">Cookie-Richtlinie</Nav.Link>
+								<Link className="nav-link" to="/about-me">Über Uns</Link>
 							</Nav.Item>
 							<Nav.Item as="li">
-								<Nav.Link eventKey="link-2">Cookie-Einstellungen</Nav.Link>
+								<Link className="nav-link" to="/contact">Kontakt</Link>
 							</Nav.Item>
 						</Nav>
 					</Col>
@@ -70,24 +71,24 @@ export const Footer: React.FC = () => {
 						<h3>
 							<strong>Legal</strong>
 						</h3>
-						<Nav defaultActiveKey="/home" as="ul" className="flex-column">
+						<Nav defaultActiveKey="/" as="ul" className="flex-column">
 							<Nav.Item as="li">
-								<Nav.Link href="/home">Impressum</Nav.Link>
+								<Link className="nav-link" to="/">Impressum</Link>
 							</Nav.Item>
 							<Nav.Item as="li">
-								<Nav.Link eventKey="link-1" href="/datenschutz">
+								<Link className="nav-link" to="/datenschutz">
 									Datenschutz
-								</Nav.Link>
+								</Link>
 							</Nav.Item>
 							<Nav.Item as="li">
-								<Nav.Link eventKey="link-2" href="/cookie-richtlinie">
+								<Link className="nav-link" to="/cookie-richtlinie">
 									Cookie-Richtlinie
-								</Nav.Link>
+								</Link>
 							</Nav.Item>
 							<Nav.Item as="li">
-								<Nav.Link eventKey="link-2" href="/cookie-einstellungen">
+								<Link className="nav-link" to="/cookie-einstellungen">
 									Cookie-Einstellungen
-								</Nav.Link>
+								</Link>
 							</Nav.Item>
 						</Nav>
 					</Col>

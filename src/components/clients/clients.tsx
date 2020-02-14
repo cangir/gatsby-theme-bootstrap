@@ -5,7 +5,7 @@ export const Clients = () => {
 	return (
 		<section className="clients">
 			<Container>
-				<Row as="ul" className="list-unstyled">
+				<Row as="ul" className="list-unstyled m-0">
 					<li className="clients-item col-sm-6 col-lg-3">
 						<img
 							className="clients-image img-fluid"
