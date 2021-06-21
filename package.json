@@ -69,7 +69,7 @@
 		"gatsby-source-filesystem": "^2.1.48",
 		"gatsby-transformer-sharp": "^2.3.14",
 		"gatsby-transformer-yaml": "^2.2.25",
-		"graphql": "^14.6.0",
+		"graphql": "^15.5.1",
 		"lodash": "^4.17.15",
 		"node-sass": "^4.13.1",
 		"react": "^16.12.0",
